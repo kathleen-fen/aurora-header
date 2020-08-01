@@ -1,0 +1,61 @@
+.header {
+
+    input::placeholder{
+        font-family: 'Arial';
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &__top {
+        border-bottom: $border-color solid 1px;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        height: 39px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        margin-top: -8px;
+        padding-top: 8px;
+        padding-right: 4px;
+        padding-left: 22px;
+        border-left: $border-color solid 1px;
+        &:nth-last-child(1) {
+            border-right: $border-color solid 1px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: flex-end;
+        min-height: 98px;
+    }
+
+    &__logo {
+        width: 37%;
+        img {
+            width: 147px;
+        }
+    }
+
+    &__search {
+        width: 39%;
+    } 
+
+    &__basket {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 37px;
+        width: 24%;
+        
+    }
+    
+}
+
