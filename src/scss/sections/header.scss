@@ -35,6 +35,7 @@
     &__bottom {
         display: flex;
         align-items: flex-end;
+        padding-top: 35px;
         min-height: 98px;
     }
 
@@ -54,8 +55,35 @@
         justify-content: flex-end;
         padding-right: 37px;
         width: 24%;
-        
+        &-text {
+            font-size: .875rem;
+            font-weight: bold;
+            color: #191919;
+        }
     }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 66px;
+        padding-bottom: 29px;
+        border-bottom: $border-color solid 1px;
+        &-item {
+            text-transform: uppercase;
+            font-size: .875rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all .5s;
+            &--active {
+                color: $pink-color;
+            }
+        }
+        &-item:hover {
+            border-bottom: #191919 solid 1px;
+            opacity: .7;
+        }
+    }
+
     
 }
+
 
