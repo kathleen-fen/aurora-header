@@ -58,10 +58,13 @@
         &-text {
             font-size: .875rem;
             font-weight: bold;
-            color: #191919;
+            color: $black-color;
         }
     }
     &__menu {
+        .search-menu-item {
+            display: none;
+        }
         display: flex;
         justify-content: space-between;
         padding-top: 66px;
@@ -78,12 +81,10 @@
             }
         }
         &-item:hover {
-            border-bottom: #191919 solid 1px;
+            border-bottom: $black-color solid 1px;
             opacity: .7;
         }
     }
-
-    
 }
 
 
