@@ -21,9 +21,4 @@
             nav.classList.toggle('header__menu_active');
         })
     };
-    if(menuItem) {
-       console.log(menuItem)  
-    }
-
-
 }())
