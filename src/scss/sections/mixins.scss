@@ -1,0 +1,13 @@
+@mixin centered {
+    display: flex;
+    align-items: center;
+}
+@mixin stretched {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin absolute-pos($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}

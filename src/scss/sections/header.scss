@@ -9,8 +9,7 @@
     &__top {
         border-bottom: $border-color solid 1px;
         .container {
-            display: flex;
-            justify-content: space-between;
+            @include stretched();
         }
     }
 
@@ -65,8 +64,7 @@
         .search-menu-item {
             display: none;
         }
-        display: flex;
-        justify-content: space-between;
+        @include stretched();
         padding-top: 66px;
         padding-bottom: 29px;
         border-bottom: $border-color solid 1px;

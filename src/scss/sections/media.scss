@@ -1,9 +1,7 @@
 @media (max-width: 870px) {
     .hamburger {
         display: block;
-        position: absolute;
-        left: 0;
-        top: 66px;
+        @include absolute-pos(66px, 0);
         transform: translateY(-50%);
         width: 26px;
         height: 12px;
@@ -11,7 +9,7 @@
             display: block;
             height: 2px;
             width: 100%;
-            background-color: #191919;
+            background-color: $black-color;
             margin-bottom: 2px;
             transition: 0.5s all;
         }
@@ -37,11 +35,9 @@
             position: relative;
         }
         &__menu {
-            position: absolute;
+            @include absolute-pos(66px, -100%);
             flex-direction: column;
             justify-content: center;
-            top: 66px;
-            left: -100%;
             width: 50%;
             padding: 20px 15px;
             background-color: rgba(255,255,255, .8);
